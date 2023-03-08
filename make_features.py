@@ -5,7 +5,7 @@ import os
 import argparse
 
 import extractor
-from feeder import VarFeeder
+#from feeder import VarFeeder
 import numba
 from typing import Tuple, Dict, Collection, List
 
@@ -34,7 +34,7 @@ def read_all() -> pd.DataFrame:
     """
     def read_file(file):
         df = read_cached(file).set_index('Page')
-        df.columns = df.columns.astype('M8[D]')
+        df.columns = df.columns.astype('M8[D]')#'M8[D]' is a 8 bype datetime type (M) (docs) with day (D) units.
         return df
 
     # Path to cached data
@@ -273,7 +273,7 @@ def run():
     df, nans, starts, ends = prepare_data(args.start, args.end, args.valid_threshold)
 
     # Our working date range
-    data_start, data_end = df.columns[0], df.columns[-1]
+    data_start, data_end = df.columns [0], df.columns[-1]
 
     # We have to project some date-dependent features (day of week, etc) to the future dates for prediction
     features_end = data_end + pd.Timedelta(args.add_days, unit='D')
@@ -342,7 +342,7 @@ def run():
     )
 
     # Store data to the disk
-    VarFeeder(args.data_dir, tensors, plain)
+    #VarFeeder(args.data_dir, tensors, plain)
 
 
 if __name__ == '__main__':

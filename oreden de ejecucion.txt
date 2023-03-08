@@ -1,0 +1,139 @@
+run()
+se ejucta parser
+obtiene los argumentos
+
+# Get the data luego se ejecuta prepare_data
+df, nans, starts, ends = prepare_data(args.start, args.end, args.valid_threshold)
+   """
+   Esto hace prepare data
+    Reads source data, calculates start and end of each series, drops bad series, calculates log1p(series)
+    :param start: start date of effective time interval, can be None to start from beginning
+    :param end: end date of effective time interval, can be None to return all data
+    :param valid_threshold: minimal ratio of series real length to entire (end-start) interval. Series dropped if
+    ratio is less than threshold
+    :return: tuple(log1p(series), nans, series start, series end)
+    """
+#prepare_data ejecuta readx
+df=read_x(start, end)
+
+"""
+Gets source data from start to end date. Any date can be None
+Obtiene los datos de origen desde la fecha de inicio hasta la fecha de finalización.
+Cualquier fecha puede ser Ninguna
+"""
+#readx ejecuta readx read_all
+df = read_all()
+    """
+    Reads source data for training/prediction
+    Lee datos de origen para entrenamiento/predicción
+    """
+#read_all ejecuta read_file
+def read_file(file):
+        df = read_cached(file).set_index('Page')
+        df.columns = df.columns.astype('M8[D]')
+        return df
+#read_file ejecuta read_cached
+    """
+    Reads csv file (maybe zipped) from data directory and caches it's content as a pickled DataFrame
+Lee el archivo csv (tal vez comprimido) del directorio de datos y almacena en caché su contenido
+como un pickled DataFrame
+    :param name: file name without extension
+    :return: file content
+    """
+#hace df.to_pickle(cached) # cached es 'data/%s.pkl' % name
+lee o guarda y retorna el dataframe pickleado
+
+Luego
+
+#prepare_data ejecuta find_start_end(data: np.ndarray)
+    """
+    Calculates start and end of real traffic data. Start is an index of first non-zero, non-NaN value,
+     end is index of last non-zero, non-NaN value
+    :param data: Time series, shape [n_pages, n_days]
+    :return:
+Calcula el inicio y el final de los datos de tráfico real. Inicio es un índice del primer valor distinto de cero, distinto de NaN,
+end es el índice del último valor distinto de cero, distinto de NaN
+    """
+#Repaso df.values 'filas=',a.shape[0],' Columnas=',a.shape[1]
+find_start_end   Básicamente reemplaza valores
+ nan ,,, en el CSV por 0
+ para calculos y al final los vuelve a agregar los nan
+#sale de prepare data
+
+# luego ejecuta uniq_page_map(df.index.values)
+    """
+    Finds agent types (spider, desktop, mobile, all) for each unique url, i.e. groups pages by agents
+    :param pages: all urls (must be presorted)
+    :return: array[num_unique_urls, 4], where each column corresponds to agent type and each row corresponds to unique url.
+     Value is an index of page in source pages array. If agent is missing, value is -1
+    """
+    basicamente 4 columnas 1 valor para cada página
+    hacen por cada url de wikipedia
+
+# luego ejecuta batch_autocorr(df.index.values)
+    """
+    Calculate autocorrelation for batch (many time series at once)
+    :param data: Time series, shape [n_pages, n_days]
+    :param lag: Autocorrelation lag
+    :param starts: Start index for each series
+    :param ends: End index for each series
+    :param threshold: Minimum support (ratio of time series length to lag) to calculate meaningful autocorrelation.
+    :param backoffset: Offset from the series end, days.
+    :return: autocorrelation, shape [n_series]. If series is too short (support less than threshold),
+    autocorrelation value is NaN
+    """
+Calcula autocorrelación para
+# Yearly(annual) autocorrelation
+batch de 365
+# Quarterly autocorrelation
+int(round(365.25/4)
+"Percent of undefined autocorr = yearly:%.3f, quarterly:%.3f" % (year_unknown_pct, quarter_unknown_pct)
+
+#Normaliza el
+year autocorrelation
+quarter autocorr
+calculo de normalización values= np.ndarray:
+(values - values.mean()) / np.std(values)
+
+#Luego ejecuta make_page_features
+    """
+    Calculates page features (site, country, agent, etc) from urls
+    :param pages: Source urls
+    :return: DataFrame with features as columns and urls as index
+    """
+
+# luego ejecuta encode_page_features
+    """
+    Applies one-hot encoding to page features and normalises result
+    :param df: page features DataFrame (one column per feature)
+    :return: dictionary feature_name:encoded_values. Encoded values is [n_pages,n_values] array
+    """
+    Aplica  one-hot encoding a las características de la página y normaliza
+    ya que sus caracteristicas site, country, agent, etc son string
+
+#luego calcula por cada pagina la popularidad(mediana) y la normaliza
+
+Salida del make_features.py
+#pasa a diccionarios los datos preprocesados
+    tensors = dict(
+        hits=df,
+        lagged_ix=lagged_ix,
+        page_map=page_map,
+        page_ix=df.index.values,
+        pf_agent=encoded_page_features['agent'],
+        pf_country=encoded_page_features['country'],
+        pf_site=encoded_page_features['site'],
+        page_popularity=page_popularity,
+        year_autocorr=year_autocorr,
+        quarter_autocorr=quarter_autocorr,
+        dow=dow,
+    )
+    plain = dict(
+        features_days=len(features_days),
+        data_days=len(df.columns),
+        n_pages=len(df),
+        data_start=data_start,
+        data_end=data_end,
+        features_end=features_end
+
+    )
