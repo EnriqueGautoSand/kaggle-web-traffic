@@ -318,6 +318,17 @@ def run():
     df[nans] = np.NaN
 
     # Assemble final output
+    print('df',df.head())
+    print('lagged_ix',lagged_ix.head())
+    print('page_map',page_map.head())
+    print('pf_agent',encoded_page_features['agent'].head())
+    print('pf_country',encoded_page_features['country'].head())
+    print('pf_site',encoded_page_features['site'].head())
+    print('page_popularity',page_popularity.head())
+    print('year_autocorr',year_autocorr.head())
+    print('quarter_autocorr',quarter_autocorr.head())
+    print('dow',dow.head())
+
     tensors = dict(
         hits=df,
         lagged_ix=lagged_ix,
