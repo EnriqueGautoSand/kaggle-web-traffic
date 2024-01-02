@@ -19,7 +19,7 @@ def agregar_columnas(dataframe,dimension,objetivo):
             lista_tags_unicos[idx]=dimension+' '+nueva_columna
         else:
             data[nueva_columna] = []
-    print('lista_tags_unicos ',dimension,lista_tags_unicos)
+    print('lista_tags_unicos',lista_tags_unicos)
     fechaAnterior = 0
     categorias = {}
 
