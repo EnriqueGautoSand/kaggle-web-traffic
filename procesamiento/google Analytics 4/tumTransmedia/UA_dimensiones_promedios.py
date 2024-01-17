@@ -36,6 +36,7 @@ def agregar_columnas(dataframe,dimension,objetivo):
             comparacion=row[dimension]
             if comparacion=='(not set)':
                 comparacion=dimension+' '+'(not set)'
+                print('comparacion',comparacion)
                 #data[j].append(row[objetivo])
                 #break
             if comparacion == j:

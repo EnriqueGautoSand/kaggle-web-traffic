@@ -18,7 +18,16 @@ dfAgrupacionCanales.rename(columns = {'Fecha':'Fecha',
 data = {'Fecha':[]}
 print(dfAgrupacionCanales.columns)
 dfAgrupacionCanales=agregar_columnas(dfAgrupacionCanales,'Agrupación de canales predeterminada', 'Número de vistas de página')
+
+asumar=['Organic Video','Organic Social']# sumo las vistas
+dfAgrupacionCanales['Organic Social']=dfAgrupacionCanales[asumar].sum(axis=1)# sumo las vistas
+asumar=['Unassigned','Direct']# sumo las vistas
+dfAgrupacionCanales['Direct']=dfAgrupacionCanales[asumar].sum(axis=1)# sumo las vistas
+aborrar=['Organic Video','Unassigned']
+dfAgrupacionCanales = dfAgrupacionCanales.drop(aborrar, axis=1)# borro columnas
+
 dfAgrupacionCanales=Promedio_desvioEstandar(dfAgrupacionCanales,'Agrupación de canales predeterminada')
+print('head10 dfAgrupacionCanales',dfAgrupacionCanales.head(10))
 
 #ahora agragare sistema operativo
 analyticsUniversal="Tum Transmedia GA4 SO.csv"
@@ -28,7 +37,12 @@ print('dfsisOperativo',dfsisOperativo.columns)
 dfsisOperativo.rename(columns = {'Fecha':'Fecha',
                             'Vistas':'Número de vistas de página'}, inplace = True)
 dfsisOperativo=agregar_columnas(dfsisOperativo,'Sistema operativo','Número de vistas de página')
+#2024 - 15 -1
 print(dfsisOperativo['Sistema operativo (not set)'].unique())
+asumar=['Playstation 4','Sistema operativo (not set)']# sumo las vistas a not se
+dfsisOperativo['Sistema operativo (not set)']=dfsisOperativo[asumar].sum(axis=1)
+aborrar=['Playstation 4']
+dfsisOperativo = dfsisOperativo.drop(aborrar, axis=1)
 dfsisOperativo=Promedio_desvioEstandar(dfsisOperativo,'Sistema operativo')
 print('head10',dfsisOperativo.head(10))
 
@@ -56,6 +70,11 @@ print('dfCategoriaDispositivo',dfCategoriaDispositivo.columns)
 #'Fecha', 'Categoría de dispositivo', 'Vistas'
 dfCategoriaDispositivo.rename(columns = {'Vistas':'Número de vistas de página'}, inplace = True)
 dfCategoriaDispositivo=agregar_columnas(dfCategoriaDispositivo,'Categoría de dispositivo','Número de vistas de página')
+print('dfCategoriaDispositivo cols',dfCategoriaDispositivo.columns)
+asumar=['smart tv','desktop']# sumo las vistas a not se
+dfCategoriaDispositivo['desktop']=dfCategoriaDispositivo[asumar].sum(axis=1)
+aborrar=['smart tv']
+dfCategoriaDispositivo = dfCategoriaDispositivo.drop(aborrar, axis=1)
 dfCategoriaDispositivo=Promedio_desvioEstandar(dfCategoriaDispositivo,'Categoría de dispositivo')
 print('head10',dfCategoriaDispositivo.head(10))
 

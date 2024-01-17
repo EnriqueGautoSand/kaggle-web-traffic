@@ -5,23 +5,33 @@ from guardarToCSV import guararDataframeToCSV
 #ahora agragare agrupacion_canales
 pd.set_option('display.max_columns', None)
 
-analyticsUniversal="informe_UNaM_UA_2018-jun4_agrupacion_canales.csv"
+analyticsUniversal="editorialUniversitaria_UA_2018-oct4_AgrupacionCanales.csv"
 dir="./datosDataStudio/"
 dfAgrupacionCanales = pd.read_csv(dir+analyticsUniversal)
 
 print(dfAgrupacionCanales.head())
-print(dfAgrupacionCanales.columns)
 data = {'Fecha':[]}
 print(dfAgrupacionCanales.columns)
 dfAgrupacionCanales=agregar_columnas(dfAgrupacionCanales,'Agrupación de canales predeterminada', 'Número de vistas de página')
+asumar=['Paid Search','Direct']# sumo las vistas
+dfAgrupacionCanales['Direct']=dfAgrupacionCanales[asumar].sum(axis=1)# sumo las vistas
+aborrar=['Paid Search']
+dfAgrupacionCanales = dfAgrupacionCanales.drop(aborrar, axis=1)# borro columnas
 dfAgrupacionCanales=Promedio_desvioEstandar(dfAgrupacionCanales,'Agrupación de canales predeterminada')
+print('head10 dfAgrupacionCanales',dfAgrupacionCanales.head(10))
+
 
 #ahora agragare sistema operativo
-analyticsUniversal="informe_UNaM_UA_2018-jun4_sistema_operativo.csv"
+analyticsUniversal="editorialUniversitaria_UA_2018-oct4_SO.csv"
 dfsisOperativo = pd.read_csv(dir+analyticsUniversal)
 print(dfsisOperativo.columns)
 dfsisOperativo=agregar_columnas(dfsisOperativo,'Sistema operativo','Número de vistas de página')
 print(dfsisOperativo['Sistema operativo (not set)'].unique())
+asumar=['Playstation 4', 'FreeBSD','Sistema operativo (not set)']# sumo las vistas
+dfsisOperativo['Sistema operativo (not set)']=dfsisOperativo[asumar].sum(axis=1)
+aborrar=['Playstation 4', 'FreeBSD']
+dfsisOperativo = dfsisOperativo.drop(aborrar, axis=1)# borro columnas
+
 dfsisOperativo=Promedio_desvioEstandar(dfsisOperativo,'Sistema operativo')
 print('head10',dfsisOperativo.head(10))
 
@@ -31,7 +41,7 @@ print('head10',dfsisOperativo.head(10))
 
 ##
 pd.set_option('display.max_columns', None)
-analyticsUniversal="informe_UNaM_UA_2018-jun4_Pais.csv"
+analyticsUniversal="editorialUniversitaria_UA_2018-oct4_Pais.csv"
 dir="./datosDataStudio/"
 dfPais = pd.read_csv(dir+analyticsUniversal)
 print(dfPais.head())
@@ -39,7 +49,7 @@ print(dfPais.columns)
 dfPais=agregar_columnaPais(dfPais,'País','Número de vistas de página')
 
 #categoria de dispositivo
-analyticsUniversal="informe_UNaM_UA_2018-jun4_categoria_dispositivo.csv"
+analyticsUniversal="editorialUniversitaria_UA_2018-oct4_catDispositivo.csv"
 dir="./datosDataStudio/"
 dfCategoriaDispositivo = pd.read_csv(dir+analyticsUniversal)
 print(dfCategoriaDispositivo.columns)
@@ -48,7 +58,7 @@ dfCategoriaDispositivo=Promedio_desvioEstandar(dfCategoriaDispositivo,'Categorí
 print('head10',dfCategoriaDispositivo.head(10))
 
 #totales
-analyticsUniversalTotales="informe_UNaM_UA_totales_Tabla.csv"
+analyticsUniversalTotales="editorialUniversitaria_UA_2018-oct4_totales.csv"
 dir="./datosDataStudio/"
 dfTotales = pd.read_csv(dir+analyticsUniversalTotales)
 print(dfCategoriaDispositivo.columns,dfTotales.head() )
@@ -63,7 +73,7 @@ dfUnion=pd.concat(aUnir,axis=1)
 
 #guradamos a csv
 salidaCarpeta="./salida/"
-NombreArchivoCSVSalida="UA2018SalidaUNaM.csv"
+NombreArchivoCSVSalida="UA2018SalidaEditorialUniversitaria.csv"
 guararDataframeToCSV(dfUnion,salidaCarpeta,NombreArchivoCSVSalida)
 
 
