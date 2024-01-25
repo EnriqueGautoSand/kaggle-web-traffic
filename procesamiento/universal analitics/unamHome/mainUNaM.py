@@ -14,6 +14,11 @@ print(dfAgrupacionCanales.columns)
 data = {'Fecha':[]}
 
 dfAgrupacionCanales=agregar_columnas(dfAgrupacionCanales,'Agrupación de canales predeterminada', 'Número de vistas de página')
+asumar=['Email','Direct']# sumo las vistas a not se
+dfAgrupacionCanales['Direct']=dfAgrupacionCanales[asumar].sum(axis=1)
+aborrar=['Email']
+dfAgrupacionCanales = dfAgrupacionCanales.drop(aborrar, axis=1)
+print('post',dfAgrupacionCanales.columns)
 dfAgrupacionCanales=Promedio_desvioEstandar(dfAgrupacionCanales,'Agrupación de canales predeterminada')
 
 #ahora agragare sistema operativo
