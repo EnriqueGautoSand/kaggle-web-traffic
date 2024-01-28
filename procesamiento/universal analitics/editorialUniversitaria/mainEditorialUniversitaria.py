@@ -31,7 +31,7 @@ asumar=['Playstation 4', 'FreeBSD','Sistema operativo (not set)']# sumo las vist
 dfsisOperativo['Sistema operativo (not set)']=dfsisOperativo[asumar].sum(axis=1)
 aborrar=['Playstation 4', 'FreeBSD']
 dfsisOperativo = dfsisOperativo.drop(aborrar, axis=1)# borro columnas
-
+dfsisOperativo['Tizen']=0
 dfsisOperativo=Promedio_desvioEstandar(dfsisOperativo,'Sistema operativo')
 print('head10',dfsisOperativo.head(10))
 
