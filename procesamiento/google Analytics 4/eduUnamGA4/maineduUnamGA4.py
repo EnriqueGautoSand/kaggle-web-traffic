@@ -19,13 +19,11 @@ data = {'Fecha':[]}
 print(dfAgrupacionCanales.columns)
 dfAgrupacionCanales=agregar_columnas(dfAgrupacionCanales,'Agrupación de canales predeterminada', 'Número de vistas de página')
 
-# asumar=['Organic Video','Organic Social']# sumo las vistas
-# dfAgrupacionCanales['Organic Social']=dfAgrupacionCanales[asumar].sum(axis=1)# sumo las vistas
-# asumar=['Unassigned','Direct']# sumo las vistas
-# dfAgrupacionCanales['Direct']=dfAgrupacionCanales[asumar].sum(axis=1)# sumo las vistas
-# aborrar=['Organic Video','Unassigned']
-# dfAgrupacionCanales = dfAgrupacionCanales.drop(aborrar, axis=1)# borro columnas
-
+asumar=['Unassigned','Direct']# sumo las vistas
+dfAgrupacionCanales['Direct']=dfAgrupacionCanales[asumar].sum(axis=1)# sumo las vistas
+aborrar=['Unassigned']
+dfAgrupacionCanales = dfAgrupacionCanales.drop(aborrar, axis=1)# borro columnas
+dfAgrupacionCanales['Social']=0
 dfAgrupacionCanales=Promedio_desvioEstandar(dfAgrupacionCanales,'Agrupación de canales predeterminada')
 print('head10 dfAgrupacionCanales',dfAgrupacionCanales.head(10))
 
@@ -37,13 +35,11 @@ print('dfsisOperativo',dfsisOperativo.columns)
 dfsisOperativo.rename(columns = {'Fecha':'Fecha',
                             'Vistas':'Número de vistas de página'}, inplace = True)
 dfsisOperativo=agregar_columnas(dfsisOperativo,'Sistema operativo','Número de vistas de página')
-#2024 - 15 -1
-#print(dfsisOperativo['Sistema operativo (not set)'].unique())
-# asumar=['Playstation 4','Sistema operativo (not set)']# sumo las vistas a not se
-# dfsisOperativo['Sistema operativo (not set)']=dfsisOperativo[asumar].sum(axis=1)
-# aborrar=['Playstation 4']
-# dfsisOperativo = dfsisOperativo.drop(aborrar, axis=1)
-# dfsisOperativo['Chrome OS']=0
+#2024 - 28 -2
+dfsisOperativo['Chrome OS']=0
+dfsisOperativo['Windows Phone']=0
+dfsisOperativo['Sistema operativo (not set)']=0
+dfsisOperativo['Tizen']=0
 dfsisOperativo=Promedio_desvioEstandar(dfsisOperativo,'Sistema operativo')
 print('head10',dfsisOperativo.head(10))
 
@@ -72,10 +68,8 @@ print('dfCategoriaDispositivo',dfCategoriaDispositivo.columns)
 dfCategoriaDispositivo.rename(columns = {'Vistas':'Número de vistas de página'}, inplace = True)
 dfCategoriaDispositivo=agregar_columnas(dfCategoriaDispositivo,'Categoría de dispositivo','Número de vistas de página')
 print('dfCategoriaDispositivo cols',dfCategoriaDispositivo.columns)
-# asumar=['smart tv','desktop']# sumo las vistas a not se
-# dfCategoriaDispositivo['desktop']=dfCategoriaDispositivo[asumar].sum(axis=1)
-# aborrar=['smart tv']
-# dfCategoriaDispositivo = dfCategoriaDispositivo.drop(aborrar, axis=1)
+
+dfCategoriaDispositivo['tablet']=0
 dfCategoriaDispositivo=Promedio_desvioEstandar(dfCategoriaDispositivo,'Categoría de dispositivo')
 print('head10',dfCategoriaDispositivo.head(10))
 
@@ -87,7 +81,7 @@ dfTotales.rename(columns = {'Vistas':'Número de vistas de página',
                                          'Sesiones por usuario':'Número de sesiones por usuario',
                                          'Total de usuarios':'Usuarios',
                                          }, inplace = True)
-print(dfCategoriaDispositivo.columns,dfTotales.head() )
+print(dfTotales.columns,dfTotales.head() )
 
 
 #unir los dataframes en columnas
@@ -97,8 +91,8 @@ for i in aUnir:
     print(i.shape)
 dfUnion=pd.concat(aUnir,axis=1)
 print('dfUnion Columnas')
-dfUnion.rename(columns = {'Organic Social':'Social'}, inplace = True)
-
+#dfUnion.rename(columns = {'Organic Social':'Social'}, inplace = True)
+#todas las columnas en cero se vuelven a agregar en el knn, aca solo se agregan para el calculo del promedio y std
 print('dfUnion.columns2',dfUnion.columns)
 #guradamos a csv
 salidaCarpeta="./salida/"

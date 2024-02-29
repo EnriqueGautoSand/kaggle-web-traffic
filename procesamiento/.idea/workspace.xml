@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff542b6b-fc26-4631-b745-19bddd568e17" name="Default Changelist" comment="" />
+    <list default="true" id="ff542b6b-fc26-4631-b745-19bddd568e17" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../GA4 editorial y edu unam 2024 .docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modelos editorial y unam 2024.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../modelos editorial y unam 2024.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google Analytics 4/eduUnamGA4/maineduUnamGA4.py" beforeDir="false" afterPath="$PROJECT_DIR$/google Analytics 4/eduUnamGA4/maineduUnamGA4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google Analytics 4/eduUnamGA4/salida/eduUNaMGA4Salida14Jun2022.csv" beforeDir="false" afterPath="$PROJECT_DIR$/google Analytics 4/eduUnamGA4/salida/eduUNaMGA4Salida14Jun2022.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tiempo y resolusion 2024.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../tiempo y resolusion 2024.docx" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,10 +17,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/google Analytics 4/editorialGA4/mainEditorialGA4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
+            <state relative-caret-position="1722">
               <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -23,10 +30,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/google Analytics 4/editorialGA4/dimensiones_promediosGA4.py">
+        <entry file="file://$PROJECT_DIR$/google Analytics 4/eduUnamGA4/maineduUnamGA4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-158">
-              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+            <state relative-caret-position="798">
+              <caret line="41" column="25" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/universal analitics/tumTransmedia/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/universal analitics/unamHome/mainUNaM.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,10 +73,10 @@
       <find>email</find>
       <find>chrome</find>
       <find>tum</find>
-      <find>=0</find>
       <find>so</find>
       <find>dfCategoriaDispositivo</find>
       <find>dfTotales</find>
+      <find>=0</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -60,9 +93,9 @@
         <option value="$PROJECT_DIR$/universal analitics/unamHome/mainUNaM.py" />
         <option value="$PROJECT_DIR$/google Analytics 4/tumTransmedia/mainTUMGA4.py" />
         <option value="$PROJECT_DIR$/google Analytics 4/tumTransmedia/guardarToCSV.py" />
-        <option value="$PROJECT_DIR$/google Analytics 4/eduUnamGA4/maineduUnamGA4.py" />
         <option value="$PROJECT_DIR$/universal analitics/editorialUniversitaria/mainEditorialUniversitaria.py" />
         <option value="$PROJECT_DIR$/google Analytics 4/editorialGA4/mainEditorialGA4.py" />
+        <option value="$PROJECT_DIR$/google Analytics 4/eduUnamGA4/maineduUnamGA4.py" />
       </list>
     </option>
   </component>
@@ -98,13 +131,13 @@
             <path>
               <item name="procesamiento" type="b2602c69:ProjectViewProjectNode" />
               <item name="procesamiento" type="462c0819:PsiDirectoryNode" />
-              <item name="google Analytics 4" type="462c0819:PsiDirectoryNode" />
+              <item name="universal analitics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="procesamiento" type="b2602c69:ProjectViewProjectNode" />
               <item name="procesamiento" type="462c0819:PsiDirectoryNode" />
-              <item name="google Analytics 4" type="462c0819:PsiDirectoryNode" />
-              <item name="editorialGA4" type="462c0819:PsiDirectoryNode" />
+              <item name="universal analitics" type="462c0819:PsiDirectoryNode" />
+              <item name="unamHome" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -129,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mainEditorialGA4">
+  <component name="RunManager" selected="Python.mainUNaM">
     <configuration name="mainEditorialGA4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="procesamiento" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -236,19 +269,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.mainEditorialGA4" />
       <item itemvalue="Python.mainEditorialUniversitaria" />
       <item itemvalue="Python.mainTUMGA4" />
       <item itemvalue="Python.mainUNaM" />
       <item itemvalue="Python.maineduUnamGA4" />
-      <item itemvalue="Python.mainEditorialGA4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mainUNaM" />
+        <item itemvalue="Python.maineduUnamGA4" />
         <item itemvalue="Python.mainEditorialGA4" />
         <item itemvalue="Python.mainEditorialUniversitaria" />
-        <item itemvalue="Python.maineduUnamGA4" />
         <item itemvalue="Python.mainTUMGA4" />
-        <item itemvalue="Python.mainUNaM" />
       </list>
     </recent_temporary>
   </component>
@@ -269,12 +302,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22693452" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2909226" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32242227" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42716858" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -301,62 +334,6 @@
     <entry file="file://$PROJECT_DIR$/unamHome/UA_dimensiones_promedios.py" />
     <entry file="file://$PROJECT_DIR$/unamHome/mainUNaM.py" />
     <entry file="file://$PROJECT_DIR$/editorialUniversitaria/mainEditorialUniversitaria.py" />
-    <entry file="file://$PROJECT_DIR$/universal analitics/tumTransmedia/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/universal analitics/unamHome/mainUNaM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google Analytics 4/tumTransmedia/guardarToCSV.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google Analytics 4/tumTransmedia/UA_dimensiones_promedios.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-436">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google Analytics 4/eduUnamGA4/guardarToCSV.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google Analytics 4/eduUnamGA4/maineduUnamGA4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="45" column="31" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google Analytics 4/tumTransmedia/mainTUMGA4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="45" selection-start-line="45" selection-end-line="45" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/google Analytics 4/eduUnamGA4/dimensiones_promedios.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -372,15 +349,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/google Analytics 4/editorialGA4/dimensiones_promediosGA4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
+        <state relative-caret-position="21">
           <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google Analytics 4/tumTransmedia/UA_dimensiones_promedios.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-588">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google Analytics 4/tumTransmedia/guardarToCSV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google Analytics 4/eduUnamGA4/guardarToCSV.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google Analytics 4/tumTransmedia/mainTUMGA4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="45" selection-start-line="45" selection-end-line="45" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/google Analytics 4/editorialGA4/mainEditorialGA4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
+        <state relative-caret-position="1722">
           <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google Analytics 4/eduUnamGA4/maineduUnamGA4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/universal analitics/tumTransmedia/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/universal analitics/unamHome/mainUNaM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
