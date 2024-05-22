@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff542b6b-fc26-4631-b745-19bddd568e17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../GA4 editorial y edu unam 2024 .docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelos editorial y unam 2024.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../modelos editorial y unam 2024.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google Analytics 4/eduUnamGA4/maineduUnamGA4.py" beforeDir="false" afterPath="$PROJECT_DIR$/google Analytics 4/eduUnamGA4/maineduUnamGA4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google Analytics 4/eduUnamGA4/salida/eduUNaMGA4Salida14Jun2022.csv" beforeDir="false" afterPath="$PROJECT_DIR$/google Analytics 4/eduUnamGA4/salida/eduUNaMGA4Salida14Jun2022.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tiempo y resolusion 2024.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../tiempo y resolusion 2024.docx" afterDir="false" />
-    </list>
+    <list default="true" id="ff542b6b-fc26-4631-b745-19bddd568e17" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,46 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/google Analytics 4/editorialGA4/mainEditorialGA4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1722">
-              <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/google Analytics 4/eduUnamGA4/maineduUnamGA4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="41" column="25" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/universal analitics/tumTransmedia/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/universal analitics/unamHome/mainUNaM.py">
+        <entry file="file://$PROJECT_DIR$/google Analytics 4/tumTransmedia/continuacion/mainTUMGA4Continuacion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+            <state relative-caret-position="63">
+              <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -96,6 +54,8 @@
         <option value="$PROJECT_DIR$/universal analitics/editorialUniversitaria/mainEditorialUniversitaria.py" />
         <option value="$PROJECT_DIR$/google Analytics 4/editorialGA4/mainEditorialGA4.py" />
         <option value="$PROJECT_DIR$/google Analytics 4/eduUnamGA4/maineduUnamGA4.py" />
+        <option value="$PROJECT_DIR$/google Analytics 4/tumTransmedia/continuacion/mainTUMGA4.py" />
+        <option value="$PROJECT_DIR$/google Analytics 4/tumTransmedia/continuacion/mainTUMGA4Continuacion.py" />
       </list>
     </option>
   </component>
@@ -131,13 +91,28 @@
             <path>
               <item name="procesamiento" type="b2602c69:ProjectViewProjectNode" />
               <item name="procesamiento" type="462c0819:PsiDirectoryNode" />
-              <item name="universal analitics" type="462c0819:PsiDirectoryNode" />
+              <item name="google Analytics 4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="procesamiento" type="b2602c69:ProjectViewProjectNode" />
               <item name="procesamiento" type="462c0819:PsiDirectoryNode" />
-              <item name="universal analitics" type="462c0819:PsiDirectoryNode" />
-              <item name="unamHome" type="462c0819:PsiDirectoryNode" />
+              <item name="google Analytics 4" type="462c0819:PsiDirectoryNode" />
+              <item name="tumTransmedia" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="procesamiento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="procesamiento" type="462c0819:PsiDirectoryNode" />
+              <item name="google Analytics 4" type="462c0819:PsiDirectoryNode" />
+              <item name="tumTransmedia" type="462c0819:PsiDirectoryNode" />
+              <item name="continuacion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="procesamiento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="procesamiento" type="462c0819:PsiDirectoryNode" />
+              <item name="google Analytics 4" type="462c0819:PsiDirectoryNode" />
+              <item name="tumTransmedia" type="462c0819:PsiDirectoryNode" />
+              <item name="continuacion" type="462c0819:PsiDirectoryNode" />
+              <item name="datosDataStudio" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -162,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mainUNaM">
+  <component name="RunManager" selected="Python.mainTUMGA4Continuacion">
     <configuration name="mainEditorialGA4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="procesamiento" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -205,7 +180,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mainTUMGA4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mainTUMGA4Continuacion" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="procesamiento" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -213,11 +188,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/google Analytics 4/tumTransmedia" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/google Analytics 4/tumTransmedia/continuacion" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/google Analytics 4/tumTransmedia/mainTUMGA4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/google Analytics 4/tumTransmedia/continuacion/mainTUMGA4Continuacion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -271,17 +246,17 @@
     <list>
       <item itemvalue="Python.mainEditorialGA4" />
       <item itemvalue="Python.mainEditorialUniversitaria" />
-      <item itemvalue="Python.mainTUMGA4" />
       <item itemvalue="Python.mainUNaM" />
       <item itemvalue="Python.maineduUnamGA4" />
+      <item itemvalue="Python.mainTUMGA4Continuacion" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mainTUMGA4Continuacion" />
         <item itemvalue="Python.mainUNaM" />
         <item itemvalue="Python.maineduUnamGA4" />
         <item itemvalue="Python.mainEditorialGA4" />
         <item itemvalue="Python.mainEditorialUniversitaria" />
-        <item itemvalue="Python.mainTUMGA4" />
       </list>
     </recent_temporary>
   </component>
@@ -300,14 +275,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2909226" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30877978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42716858" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36824876" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -381,20 +355,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/google Analytics 4/editorialGA4/mainEditorialGA4.py">
+    <entry file="file://$PROJECT_DIR$/universal analitics/unamHome/mainUNaM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1722">
-          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google Analytics 4/eduUnamGA4/maineduUnamGA4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="25" />
+        <state relative-caret-position="315">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -410,10 +374,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/universal analitics/unamHome/mainUNaM.py">
+    <entry file="file://$PROJECT_DIR$/google Analytics 4/eduUnamGA4/maineduUnamGA4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        <state relative-caret-position="518">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google Analytics 4/editorialGA4/mainEditorialGA4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google Analytics 4/tumTransmedia/continuacion/paisUA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google Analytics 4/tumTransmedia/continuacion/UA_dimensiones_promedios.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-987" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google Analytics 4/tumTransmedia/continuacion/mainTUMGA4Continuacion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
