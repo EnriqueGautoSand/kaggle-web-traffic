@@ -1,0 +1,3 @@
+porque 7 días a futuro
+porque agregar el promedio de x cantidad de días mensual, trimestral, anual
+porque predictor flag
